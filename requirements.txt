@@ -1,0 +1,6 @@
+instaloader==4.11
+customtkinter
+jinja2
+requests
+pillow
+fake-useragent

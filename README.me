@@ -1,0 +1,80 @@
+📸 InstaGuest
+
+InstaGuest is a simple, robust, and modern desktop application to download Instagram posts (Images, Videos, Captions) from public profiles without requiring a login.
+
+Built with Python, CustomTkinter, and Instaloader.
+
+🚀 Features
+
+Guest Mode: No Instagram account or login required. Safe from bans.
+
+Media Download: Downloads high-quality images and videos.
+
+Get URLs Only: Option to extract only post links (very fast) without downloading files.
+
+HTML Reporting: Generates a beautiful HTML report with previews of downloaded posts.
+
+Smart Skipping: Automatically skips posts that have already been downloaded.
+
+Modern UI: Clean and dark-themed user interface using CustomTkinter.
+
+⚠️ Limitations
+
+Quantity Limit: Due to Instagram's strict restrictions for guest users, the app can usually fetch only the first 12 to 24 posts of a profile.
+
+Public Profiles Only: Can only access public accounts.
+
+🛠️ Installation
+
+Clone or Download this repository.
+
+Install Python 3.10+ (if not installed).
+
+Install Dependencies:
+Open your terminal/command prompt in the project folder and run:
+
+pip install -r requirements.txt
+
+
+If requirements.txt is missing, install these manually:
+
+pip install customtkinter instaloader jinja2 packaging requests
+
+
+▶️ Usage
+
+Run the main script:
+
+python main.py
+
+
+Enter the Target Username (without @, e.g., natgeo).
+
+(Optional) Check "Get URLs Only" if you just want the links.
+
+Click START 🚀.
+
+Check the output folder for your files and the HTML report.
+
+📂 Project Structure
+
+InstaGuest/
+├── core/
+│   ├── scraper.py          # Main logic for downloading
+│   ├── report_generator.py # HTML report creation
+│   ├── models.py           # Data structures
+│   └── utils.py            # Helper functions
+├── ui/
+│   └── app_ui.py           # GUI implementation
+├── templates/
+│   └── report_template.html # Jinja2 template for reports
+├── output/                 # Downloaded files go here
+├── main.py                 # Entry point
+└── README.md
+
+
+👨‍💻 Developer
+
+Developed by Ahmad Salami Far.
+
+Disclaimer: This tool is for educational purposes only. Please respect Instagram's terms of service and user privacy.
